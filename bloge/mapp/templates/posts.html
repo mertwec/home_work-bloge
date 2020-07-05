@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main blog</title>
+</head>
+<body>
+    <h2>All our Posts</h2>
+    {% for post in posts_list %}
+        <li >
+            <dev> {{ post.title }} --in-- {{post.rubric}}<br>
+                            {{post.author}}<br>
+                          {{post.created_at}}</dev>
+        </li>
+    {% endfor %}
+</body>
+</html>

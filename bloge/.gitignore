@@ -1,0 +1,10 @@
+.vscode
+env
+__pycache__
+static_content
+
+**/migrations/*
+!**/migrations/__init__.py
+
+*.sqlite3
+*.py[cod]

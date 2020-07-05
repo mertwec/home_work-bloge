@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mega blog</title>
+</head>
+<body>
+<h1>Категории</h1>
+    <div>
+        <ul>
+            {% for rub in rubrics %}
+            <li >
+                {{ rub.title }}
+                <!--<a href="{{ rub.get_absolute_url }}"></a>-->
+            </li>
+            {% endfor %}
+        </ul>
+        <p>здесь могла быть ваша реклама </p>
+    </div>
+</body>
+</html>
